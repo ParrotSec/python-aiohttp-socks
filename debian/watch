@@ -1,0 +1,3 @@
+version=3
+opts=uversionmangle=s/(rc|a|b|c)/~$1/ \
+https://pypi.debian.net/aiohttp_socks/aiohttp_socks-(.+)\.(?:zip|tgz|tbz|txz|(?:tar\.(?:gz|bz2|xz)))

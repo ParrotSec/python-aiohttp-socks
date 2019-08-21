@@ -1,0 +1,5 @@
+python-aiohttp-socks (0.2.2-parrot1) rolling; urgency=medium
+
+  * Import new package.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 21 Aug 2019 13:44:19 +0200

@@ -1,0 +1,38 @@
+Source: python-aiohttp-socks
+Section: python
+Priority: optional
+Maintainer: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>
+Uploaders: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>
+Build-Depends: debhelper-compat (= 12),
+               dh-python,
+               python3-all-dev (>= 3.5.3~),
+               python3-setuptools,
+               python3-sphinx,
+               python3-multidict,
+               python3-async-timeout,
+               python3-aiohttp,
+               python3-yarl (>= 1.0),
+               cython3,
+# for tests:
+               python3-pytest,
+               python3-pytest-mock,
+               python3-chardet,
+               python3-gunicorn
+Standards-Version: 4.4.0
+Homepage: https://github.com/romis2012/aiohttp-sock
+Testsuite: autopkgtest-pkg-python
+
+Package: python3-aiohttp-socks
+Architecture: any
+Depends: python3-aiohttp, ${misc:Depends}, ${python3:Depends}, ${shlibs:Depends},
+Description: SOCKS proxy connector for aiohttp.
+ SOCKS proxy connector for aiohttp. SOCKS4(a) and SOCKS5 are supported.
+
+Package: python3-aiohttp-socks-dbg
+Architecture: any
+Section: debug
+Depends: python3-aiohttp (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}, ${python3:Depends}
+Description: SOCKS proxy connector for aiohttp - debug version
+ SOCKS proxy connector for aiohttp. SOCKS4(a) and SOCKS5 are supported.
+ .
+ This package contains the extension built for the Python 3 debug interpreter.
